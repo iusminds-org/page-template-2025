@@ -1,5 +1,5 @@
 {
-  "name": "react-landing-page-2021",
+  "name": "baker-zing",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
@@ -53,5 +53,5 @@
     "tailwindcss": "^2.2.17",
     "typescript": "^4.4.4"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

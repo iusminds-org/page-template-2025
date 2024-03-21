@@ -1,7 +1,7 @@
 import React from 'react';
 
-import config from '../config/index.json';
 import Divider from './Divider';
+import config from '../config/index.json';
 
 const Product = () => {
   const { product } = config;
@@ -10,26 +10,9 @@ const Product = () => {
   return (
     <section className={`bg-background py-8`} id="product">
       <div className={`container max-w-5xl mx-auto m-8`}>
-        <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
-        >
-          {product.title.split(' ').map((word, index) => (
-            <span
-              key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
-            >
-              {word}{' '}
-            </span>
-          ))}
-        </h1>
         <Divider />
         <div className={`flex flex-wrap`}>
           <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
-            <h3
-              className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-            >
-              {firstItem?.title}
-            </h3>
             <p className={`text-gray-600`}>{firstItem?.description}</p>
           </div>
           <div className={`w-full sm:w-1/2 p-6`}>
@@ -50,12 +33,27 @@ const Product = () => {
           </div>
           <div className={`w-full sm:w-1/2 p-6 mt-20`}>
             <div className={`align-middle`}>
-              <h3
-                className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
-              >
-                {secondItem?.title}
-              </h3>
               <p className={`text-gray-600 mb-8`}>{secondItem?.description}</p>
+              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                <div className="rounded-md shadow">
+                  <a
+                    href={product.primaryAction.href}
+                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+                  >
+                    {product.primaryAction.text}
+                  </a>
+                </div>
+                <div className="mt-3 sm:mt-0 sm:ml-3">
+                  <a
+                    href={product.secondaryAction.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+                  >
+                    {product.secondaryAction.text}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
