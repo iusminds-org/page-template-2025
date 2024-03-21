@@ -2,7 +2,7 @@
   "company": {
     "name": "Bakerzing",
     "logo": "/assets/images/logo.png",
-    "favicon": "/assets/images/favicon.png"
+    "addicon": "favicon-32x32.png"
   },
   "navigation": [
     {
@@ -45,7 +45,7 @@
     ],
     "primaryAction": {
       "text": "Email me",
-      "href": "mailto:hannah.baker.career@gmail.com?subject=I found you on your website!"
+      "href": "mailto:hannah.baker.careers@gmail.com?subject=I found you on your website!"
     },
     "secondaryAction": {
       "text": "View LinkedIn",
@@ -150,9 +150,9 @@
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://github.com/hanahbaker1",
+      "mastodon": "https://mastodon.social/@hanabee",
+      "linkedin": "https://www.linkedin.com/in/hannahbaker-28/"
     }
   }
 }

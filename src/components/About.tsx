@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const About = () => {
   const { company, about } = config;
-  const { favicon, name: companyName } = company;
+  const { logo: footerIcon, name: companyName } = company;
   const { socialMedia, sections } = about;
 
   return (
@@ -14,7 +14,7 @@ const About = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div>
-          <img src={favicon} alt={companyName} className="w-16 h-16" />
+          <img src={footerIcon} alt={companyName} className="w-37 h-20" />
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
@@ -61,8 +61,8 @@ const About = () => {
             </svg>
           </a>
           <a
-            aria-label="twitter"
-            href={socialMedia.twitter}
+            aria-label="mastodon"
+            href={socialMedia.mastodon}
             target="_blank"
             rel="noreferrer"
           >
