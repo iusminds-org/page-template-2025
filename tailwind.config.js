@@ -6,9 +6,9 @@ module.exports = {
     extend: {
       colors: {
         primary: '#1DB954', // Spotify green
-        secondary: '#ffc72c', // Bee color
+        secondary: '#163a11',
         tertiary: '#99a0a3',
-        border: '#163a11',
+        border: '#ffc72c', // Bee color
         background: '#000000', // Dark background color
         customYellow: 'ffc72c',
         gray: {

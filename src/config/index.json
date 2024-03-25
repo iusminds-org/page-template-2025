@@ -7,30 +7,25 @@
   "navigation": [
     {
       "name": "About",
-      "href": "product"
+      "href": "about"
     },
     {
       "name": "Hire me",
-      "href": "features"
-    },
-
-    {
-      "name": "Delete me",
-      "href": "pricing"
+      "href": "hire_me"
     },
     {
-      "name": "My README",
-      "href": "about"
+      "name": "External Links",
+      "href": "footer"
     }
   ],
 
-  "mainHero": {
+  "openingStatement": {
     "title": "Hannah Baker |",
     "subtitle": "Software Engineer",
-    "description": "Welcome to my corner of the web! I'm Hannah, a trilingual British-Indonesian fully remote fullstack software engineer based in the beautiful West Yorkshire. With years of hands-on experience in C# .NET, Golang, and React, I thrive on crafting innovative solutions for web applications. My diverse background and skill set empowers me to tackle challenges with agility and precision, ensuring every project is a success. Explore my portfolio and let's bring your ideas to life together!",
+    "description": "Hi folks 👋 Welcome to my little corner of the web! I'm Hannah, a trilingual British-Indonesian software engineer based in the beautiful county of West Yorkshire. I'm a Dendrophile (n) A person who loves nature. I also have various hobbies including cooking and baking, playing board games, solo walking and hiking and personal software developement projects mainly in Go, C# .NET, and React. My diverse background and skill set empowers me to tackle challenges with agility and precision. Explore my portfolio and let's bring your ideas to life together🪴",
     "img": "/assets/images/happyTeam.jpeg"
   },
-  "product": {
+  "about": {
     "items": [
       {
         "description": "Hi, I'm Hannah (she/her/hers), a Software Engineer currently on a career break. I reside in the serene landscapes of West Yorkshire, where I share my home with my partner James and our beloved fur babies, Elsie, Feisty, and Harvey.\n\nMy website serves as a digital journal, documenting notable career events, experimental writings on my learning journey, and anything else that piques my interest. I'm deeply passionate about software engineering, board games, and the wonders of nature.\n\n",
@@ -44,7 +39,7 @@
       }
     ],
     "primaryAction": {
-      "text": "Email me",
+      "text": "Contact me",
       "href": "https://forms.gle/ZnNEp8ELbFPcQJuD7"
     },
     "secondaryAction": {
@@ -52,34 +47,23 @@
       "href": "https://www.linkedin.com/in/hannahbaker-28/"
     }
   },
-  "features": {
-    "title": "Hannah Baker ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+  "hireMe": {
+    "title": "Software Development Overview",
+    "description": "I am a Software Engineer with over 7 years of experience focused primarily on back-end development. I am passionate about solving problems, sharing knowledge, and delivering exceptional results for customers. My priority is building clean, reusable software components that are easy to maintain and meet rigorous quality standards. I also aim to enhance team workflows for more efficient delivery over time.",
     "items": [
       {
         "name": "C# .NET",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "description": "Throughout my career, I've dedicated considerable time to mastering C#, employing it extensively in large-scale enterprise projects. It has been my primary focus, allowing me to navigate various industries and environments with finesse, highlighting my advanced capabilities. I am highly skilled at using C# to confidently address complex development challenges.",
         "icon": "/assets/images/csharp.png"
       },
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
-      },
-      {
         "name": "Golang",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "description": "I've got close to 2 years of solid experience getting my hands dirty with Golang in enterprise settings. From crafting consumer experiences like discounts and vouchers on the consumer facing Deliveroo site, to building internal tools for controlling critical system-wide solutions, I've been in the thick of it. Additionally, within Deliveroo I've chipped in on enhancing sitewide Golang template repositories to make life easier for fellow developers.",
         "icon": "/assets/images/golang.png"
       },
       {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
-      },
-      {
         "name": "Docker",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "description": "Docker has been a cornerstone of my career, seamlessly fitting into almost every project I've tackled. With microservice architecture being the norm and containers being widely adopted in modern app development, Docker has become essential. Whether it's configuring CI/CD pipelines or ensuring smooth testing and production deployments, you'll find me regularly working with Docker and Docker Compose files.",
         "icon": "/assets/images/docker.png"
       },
       {
@@ -96,6 +80,16 @@
         "name": "SQL & No SQL DBs",
         "description": "TypeScript is a programming language developed and maintained by Microsoft.",
         "icon": "/assets/images/db.png"
+      },
+      {
+        "name": "React.js",
+        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "icon": "/assets/images/react.png"
+      },
+      {
+        "name": "Typescript",
+        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "icon": "/assets/images/ts.png"
       }
     ]
   },
@@ -146,25 +140,25 @@
       }
     ]
   },
-  "about": {
+  "footer": {
     "sections": [
       {
-        "name": "Something",
+        "name": "The nerdy stuff",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Recipes",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Games",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "Words not necessarily of wisdom",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
