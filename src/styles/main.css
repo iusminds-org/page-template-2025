@@ -27,3 +27,7 @@ a:hover {
 .content ul {
   @apply my-6 text-white; /* Set white text color for unordered lists */
 }
+
+.text-yellow {
+  @apply text-customYellow; /* Apply custom yellow color */
+}

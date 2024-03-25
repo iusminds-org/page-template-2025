@@ -8,8 +8,15 @@ module.exports = {
         primary: '#1DB954', // Spotify green
         secondary: '#ffc72c', // Bee color
         tertiary: '#99a0a3',
-        border: '#1a2e35',
+        border: '#163a11',
         background: '#000000', // Dark background color
+        customYellow: 'ffc72c',
+        gray: {
+          900: '#b3b6b4', // Replace the default color with '#87cea8'
+          800: '#a48c5d',
+          600: '#bfc0a0',
+          500: '#bfc0a0',
+        },
       },
       animation: {
         vote: 'vote 1s ease-in-out',
