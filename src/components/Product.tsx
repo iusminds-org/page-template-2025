@@ -7,12 +7,6 @@ const Product = () => {
   const { product } = config;
   const [firstItem, secondItem] = product.items;
 
-  // Function to handle clicking on the email button
-  function handleEmailClick() {
-    window.location.href =
-      'mailto:hi@hanabee.me?subject=I found you on your website!';
-  }
-
   return (
     <section className={`bg-background py-8`} id="product">
       <div className={`container max-w-5xl mx-auto m-8`}>
@@ -42,13 +36,14 @@ const Product = () => {
               <p className={`text-gray-600 mb-8`}>{secondItem?.description}</p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  {/* Button with email functionality */}
-                  <button
-                    onClick={handleEmailClick}
+                  <a
+                    href={product.primaryAction.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
                   >
                     {product.primaryAction.text}
-                  </button>
+                  </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   {/* Button for secondary action */}
