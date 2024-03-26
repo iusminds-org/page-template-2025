@@ -68,75 +68,28 @@
       },
       {
         "name": "AWS Stack",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "description": "I've seamlessly integrated a range of AWS products with the main programming languages I use. These tools include creating and maintaining EC2 instances, API Gateway for securing RESTful APIs, CloudWatch for observability, and working with Lambda functions. Alongside these, I regularly work with S3, CloudFront, RDS Postgres, and DynamoDB.",
         "icon": "/assets/images/aws.png"
       },
       {
         "name": "Terraform",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
+        "description": "Terraform is my main tool for managing infrastructure as code. With Terraform, I define infrastructure resources in clear, versionable configuration files, promoting reuse, security, and collaboration. Using Terraform ensures safe and efficient provisioning and management of infrastructure across its lifecycle. Additionally, I've been part of the team that developed Terraform module templates for SLO monitoring.",
         "icon": "/assets/images/terraform.png"
       },
       {
         "name": "SQL & No SQL DBs",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "description": "In my professional experience, I've delved into both SQL and NoSQL databases extensively. This includes crafting stored procedures, incorporating inline SQL scripting within code, and fine-tuning MySQL queries for optimal performance. I've also navigated MongoDB, optimising speed through partitioning and indexing critical data for efficient querying. Moreover, I've managed AWS RDS Postgres, including overseeing the migration of sizable tables in a production environment. Utilising DynamoDB for rapid retrieval needs, I've carefully architected Dynamo schemas to enhance functionality. Outside of work, I've dabbled in graph databases as well.",
         "icon": "/assets/images/db.png"
       },
       {
         "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
+        "description": "Over the past few years, I've delved into ReactJS, utilising its capabilities to craft frontend applications with reusable components and efficient state management. While not a frontend developer by trade, I've gained proficiency in working with React's component-based architecture, virtual DOM, and performance optimisation tools through hands-on experience in various projects.",
         "icon": "/assets/images/react.png"
       },
       {
         "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
+        "description": "In my opinion, React with TypeScript is an unbeatable combo for web app development. TypeScript's static typing is a game-changer, ensuring code quality and productivity by catching errors early and offering a backend-like type system that feels familiar and reliable to me as a backend engineer.",
         "icon": "/assets/images/ts.png"
-      }
-    ]
-  },
-  "pricing": {
-    "title": "Core Skills",
-    "items": [
-      {
-        "name": "C# .NET",
-        "price": "6 yoe",
-        "priceDetails": "",
-        "features": [
-          "Asyncronous programming",
-          "ORM: Dapper and Entity Framework",
-          "LINQ",
-          "Unit testing",
-          "Integration testing",
-          "Swagger",
-          "Identity Server",
-          "Dependency Injection"
-        ]
-      },
-      {
-        "name": "Golang",
-        "price": "2 yoe",
-        "priceDetails": "",
-        "features": [
-          "Concurrency: Go Routines and Channels",
-          "RESTful APIs",
-          "GRPC and Protobuf",
-          "Microservice Architecture",
-          "Error handling"
-        ]
-      },
-      {
-        "name": "Regular tech stack",
-        "price": "",
-        "priceDetails": "",
-        "features": [
-          "GIT",
-          "Authentication and Authorization",
-          "AWS (Lambda, EC2, EKS, DynamoDB, Aurora etc)",
-          "CircleCI",
-          "Terraform",
-          "Docker",
-          "Datadog monitoring & tracing, microservice SLO SLA configuration, and Sentry alerting",
-          "Rancher, Jenkins, Helm"
-        ]
       }
     ]
   },
