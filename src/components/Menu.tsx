@@ -30,7 +30,8 @@ const Menu = () => {
           >
             <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
-                <a href="#">
+                {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                <a href="/">
                   <span className="sr-only">{companyName}</span>
                   <img alt="logo" className="h-16 w-auto sm:h-16" src={logo} />
                 </a>
