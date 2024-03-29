@@ -10,7 +10,7 @@
       "href": "about"
     },
     {
-      "name": "Hire me",
+      "name": "Software details",
       "href": "hire_me"
     },
     {
@@ -33,7 +33,7 @@
         "title": "Hannah Baker"
       },
       {
-        "description": "As someone living with Autism, I approach life with curiosity and I’m continuously learning how to make my life work better around it.\n\nFeel free to reach out to me via email by clicking the bitton below or connect with me through any of the social links below. I'm always up for a chat about anything from code to cats!",
+        "description": "As someone living with Autism, I approach life with curiosity and I’m continuously learning how to make my life work better around it.\n\nFeel free to reach out to me via email by clicking the button below or connect with me through any of the social links below. I'm always up for a chat about anything from code to cats!",
         "img": "/assets/images/product2.jpg",
         "title": "Hannah Baker"
       }
@@ -96,7 +96,7 @@
   "footer": {
     "sections": [
       {
-        "name": "The nerdy stuff",
+        "name": "CV/Resume",
         "href": "/cv",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
@@ -111,7 +111,7 @@
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Words not necessarily of wisdom",
+        "name": "A blog of words",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
