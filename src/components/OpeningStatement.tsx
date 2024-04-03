@@ -49,13 +49,16 @@ const OpeningStatement = () => {
             agility and precision. Explore my portfolio and let&apos;s bring
             your ideas to life together🪴
           </p>
-          <p className=" text-sm mt-7 text-lime-600">
-            PS: Just a heads up – this site is still a work in progress! So, you
-            might find some links that aren&apos;t quite ready yet. If you have
-            any thoughts on how I can make things better – whether it&apos;s the
-            layout, the wording, or anything else – please let me know by
-            clicking the &quot;Contact me&quot; button below! Your input means a
-            lot to me. Thanks 🙏
+          <p className=" text-sm mt-7 text-green-600">
+            <em>
+              PS: Just a heads up – this site is still a work in progress! So,
+              you might find some links that aren&apos;t quite ready yet. If you
+              have any thoughts on how I can make things better – whether
+              it&apos;s the layout, the wording, or anything else – please let
+              me know by clicking the &quot;Contact me&quot; button below! Your
+              input means a lot to me. Thanks
+            </em>{' '}
+            🙏
           </p>
         </div>
       </div>
