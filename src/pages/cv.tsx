@@ -39,20 +39,20 @@ const CV: React.FC = () => {
       <LazyShow>
         <div className="py-12 bg-background" id="pdf-content">
           <div className="sm:text-center lg:text-left">
-            <h3 className="w-full my-2 text-5xl font-bold leading-tight text-center text-primary mb-8">
+            <h3 className="w-full my-2 text-5xl font-bold leading-tight text-center text-lime-600 mb-8">
               Hannah Baker
             </h3>
           </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
               <div className="md:flex">
-                <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
-                  <h2 className="text-primary font-semibold tracking-wide uppercase mt-2 text-2xl leading-8">
+                <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
+                  <h2 className="text-lime-600 font-semibold tracking-wide uppercase mt-2 text-2xl leading-8">
                     Summary
                   </h2>
                 </dt>
-                <dd className="mt-1 text-base text-gray-500 md:w-2/3">
-                  <p className="max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
+                  <p className="max-w-2xl text-xl text-yellow-500 lg:mx-auto">
                     Results-oriented Backend Software Engineer specialising in
                     the development of complex data intensive systems,
                     prioritising scalability and site reliability. Proficient in
@@ -78,16 +78,16 @@ const CV: React.FC = () => {
                 </dd>
               </div>
             </dl>
-            <h2 className="text-primary font-semibold tracking-wide uppercase mt-4 text-2xl leading-8">
+            <h2 className="text-lime-600 font-semibold tracking-wide uppercase mt-4 text-2xl leading-8">
               Experience
             </h2>
             <div className="mt-10">
               <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-1 md:gap-x-8 md:gap-y-10">
                 <div className="md:flex">
-                  <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
+                  <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
                     Deliveroo
                   </dt>
-                  <dd className="mt-1 text-base text-gray-500 md:w-2/3">
+                  <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
                     <em>
                       An online food delivery company operating in the UK and
                       globally.
@@ -159,7 +159,7 @@ const CV: React.FC = () => {
                     <h2 className="font-semibold uppercase text-green-600 mt-2">
                       Technologies:
                     </h2>
-                    <p className="font-semibold text-gray-400">
+                    <p className="font-semibold text-yellow-400">
                       Golang, Terraform, DynamoDB, Aurora Postgres, Docker,
                       Kafka, GRPC, CircleCi, API Gateway, Lambda, EC2, Redis,
                       Datadog, Sentry, React, Typescript, Express, NextJS, Ruby
@@ -168,10 +168,10 @@ const CV: React.FC = () => {
                   </dd>
                 </div>
                 <div className="md:flex">
-                  <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
+                  <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
                     Aire Logic
                   </dt>
-                  <dd className="mt-1 text-base text-gray-500 md:w-2/3">
+                  <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
                     <em>
                       A UK-based IT consultancy primarily focused on improving
                       healthcare systems.
@@ -211,7 +211,7 @@ const CV: React.FC = () => {
                     <h2 className="font-semibold uppercase text-green-600 mt-2">
                       Technologies:
                     </h2>
-                    <p className="font-semibold text-gray-400">
+                    <p className="font-semibold text-yellow-400">
                       C# (.NET Core, .NET Standard, .NET Framework), Docker,
                       Rancher, Azure Pipelines, CircleCi, Powershell, Lambda,
                       MongoDB, Postgres, GRPC, XML, Liquid Templating React,
@@ -220,10 +220,10 @@ const CV: React.FC = () => {
                   </dd>
                 </div>
                 <div className="md:flex">
-                  <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
+                  <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
                     Jet2.com
                   </dt>
-                  <dd className="mt-1 text-base text-gray-500 md:w-2/3">
+                  <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
                     <em>
                       A leading leisure airline and package holiday provider.
                     </em>
@@ -272,7 +272,7 @@ const CV: React.FC = () => {
                     <h2 className="font-semibold uppercase text-green-600 mt-2">
                       Technologies:
                     </h2>
-                    <p className="font-semibold text-gray-400">
+                    <p className="font-semibold text-yellow-400">
                       .NET C#, SQL, Akka.NET, Kafka, Docker, Sitecore, Jenkins,
                       Nunit, Xunit, Docker, Kafka, Rancher, Gherkin, Specflow,
                       Azure Pipelines, Kibana.
@@ -280,10 +280,10 @@ const CV: React.FC = () => {
                   </dd>
                 </div>
                 <div className="md:flex">
-                  <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
+                  <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
                     Keyloop - EnquiryMax
                   </dt>
-                  <dd className="mt-1 text-base text-gray-500 md:w-2/3">
+                  <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
                     <em>
                       A leading LMS provider within the automotive industry.
                     </em>
@@ -318,17 +318,17 @@ const CV: React.FC = () => {
                     <h2 className="font-semibold uppercase text-green-600 mt-2">
                       Technologies:
                     </h2>
-                    <p className="font-semibold text-gray-400">
+                    <p className="font-semibold text-yellow-400">
                       .NET C#, SQL, AngularJS, VueJS, Javascript, JQuery, MySQL,
                       Liquid Templating, AWS S3
                     </p>
                   </dd>
                 </div>
                 <div className="md:flex">
-                  <dt className="font-semibold tracking-wide text-lg uppercase text-gray-500 md:w-1/6">
+                  <dt className="font-semibold tracking-wide text-lg uppercase text-yellow-500 md:w-1/6">
                     WorkClever Digital
                   </dt>
-                  <dd className="mt-1 text-base text-gray-500 md:w-2/3">
+                  <dd className="mt-1 text-base text-yellow-500 md:w-2/3">
                     <em>
                       A leading LMS provider within the automotive industry.
                     </em>
@@ -339,7 +339,7 @@ const CV: React.FC = () => {
                     <h2 className="font-semibold uppercase text-green-600 mt-2">
                       Technologies:
                     </h2>
-                    <p className="font-semibold text-gray-400">
+                    <p className="font-semibold text-yellow-400">
                       .NET C#, .NET VB, SQL, Javascript, JQuery, PHP
                     </p>
                   </dd>
@@ -351,7 +351,7 @@ const CV: React.FC = () => {
       </LazyShow>
       <div className="py-12h-screen flex items-center justify-center">
         <button
-          className="w-2/5 my-2 absolute flex items-center justify-center h-12 rounded-md text-tertiary border-primary border-4"
+          className="w-2/5 my-2 absolute flex items-center justify-center h-12 rounded-md text-tertiary border-lime-600 border-4"
           onClick={handleDownloadPDF}
         >
           Download PDF

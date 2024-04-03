@@ -21,7 +21,7 @@ const Footer = () => {
             <a
               key={`${section.name}-${index}`}
               href={section.href}
-              className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
+              className="hover:text-lime-600 text-base cursor-pointer leading-4 text-yellow-800 dark:text-yellow-400 dark:hover:text-white"
             >
               {section.name}
             </a>
@@ -35,7 +35,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-yellow-800 dark:text-white hover:text-lime-600"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -51,7 +51,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-yellow-800 dark:text-white hover:text-lime-600"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -67,7 +67,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-yellow-800 dark:text-white hover:text-lime-600"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

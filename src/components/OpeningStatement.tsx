@@ -9,24 +9,24 @@ const OpeningStatement = () => {
     <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
       <div className="sm:text-center lg:text-left">
         <h3
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-lime-600`}
         >
           {openingStatement.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={index % 2 ? 'text-lime-600' : 'text-border'}
             >
               {word}{' '}
             </span>
           ))}
         </h3>
         <h3
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-lime-600`}
         >
           {openingStatement.subtitle.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index % 2 ? 'text-primary' : 'text-border'}
+              className={index % 2 ? 'text-lime-600' : 'text-border'}
             >
               {word}{' '}
             </span>
@@ -34,8 +34,22 @@ const OpeningStatement = () => {
         </h3>
         <Divider />
         <div className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          <p className=" text-gray-500">{openingStatement.description}</p>
-          <p className=" text-sm mt-7 text-lime-700">
+          <p className=" text-yellow-600">
+            Hi folks 👋 Welcome to my little corner of the web! I&apos;m Hannah,
+            a trilingual British-Indonesian software engineer based in the
+            beautiful county of West Yorkshire. I&apos;m a
+            <em className=" text-green-700"> Dendrophile</em>{' '}
+            <em className=" text-sm text-green-700">
+              (n) A person who loves nature
+            </em>
+            . I also have various hobbies including cooking and baking, playing
+            board games, solo walking and hiking and personal software
+            developement projects mainly in Go, C# .NET, and React. My diverse
+            background and skill set empowers me to tackle challenges with
+            agility and precision. Explore my portfolio and let&apos;s bring
+            your ideas to life together🪴
+          </p>
+          <p className=" text-sm mt-7 text-lime-600">
             PS: Just a heads up – this site is still a work in progress! So, you
             might find some links that aren&apos;t quite ready yet. If you have
             any thoughts on how I can make things better – whether it&apos;s the

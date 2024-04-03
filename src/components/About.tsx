@@ -13,7 +13,7 @@ const About = () => {
         <Divider />
         <div className={`flex flex-wrap`}>
           <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
-            <p className={`text-gray-600`}>{firstItem?.description}</p>
+            <p className={`text-yellow-600`}>{firstItem?.description}</p>
           </div>
           <div className={`w-full sm:w-1/2 p-6`}>
             <img
@@ -33,14 +33,16 @@ const About = () => {
           </div>
           <div className={`w-full sm:w-1/2 p-6 mt-20`}>
             <div className={`align-middle`}>
-              <p className={`text-gray-600 mb-8`}>{secondItem?.description}</p>
+              <p className={`text-yellow-600 mb-8`}>
+                {secondItem?.description}
+              </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href={about.primaryAction.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-lime-600 hover:bg-border hover:text-lime-600 md:py-4 md:text-lg md:px-10`}
                   >
                     {about.primaryAction.text}
                   </a>
@@ -51,7 +53,7 @@ const About = () => {
                     href={about.secondaryAction.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary bg-background hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+                    className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-lime-600 bg-background hover:bg-border hover:text-lime-600 md:py-4 md:text-lg md:px-10`}
                   >
                     {about.secondaryAction.text}
                   </a>
