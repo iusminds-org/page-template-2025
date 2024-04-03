@@ -17,6 +17,9 @@ module.exports = {
           600: '#bfc0a0',
           500: '#bfc0a0',
         },
+        lime: {
+          700: '#4d7c0f',
+        },
       },
       animation: {
         vote: 'vote 1s ease-in-out',

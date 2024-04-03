@@ -33,8 +33,16 @@ const OpeningStatement = () => {
           ))}
         </h3>
         <Divider />
-        <div className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          {openingStatement.description}
+        <div className="mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          <p className=" text-gray-500">{openingStatement.description}</p>
+          <p className=" text-sm mt-7 text-lime-700">
+            PS: Just a heads up – this site is still a work in progress! So, you
+            might find some links that aren&apos;t quite ready yet. If you have
+            any thoughts on how I can make things better – whether it&apos;s the
+            layout, the wording, or anything else – please let me know by
+            clicking the &quot;Contact me&quot; button below! Your input means a
+            lot to me. Thanks 🙏
+          </p>
         </div>
       </div>
     </main>
