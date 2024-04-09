@@ -1,29 +1,52 @@
-import jsPDF from 'jspdf';
-
 import Footer from '../components/Footer';
 import LazyShow from '../components/LazyShow';
 import Menu from '../components/Menu';
 
-const CV: React.FC = () => {
-  const handleDownloadPDF = () => {
-    const input = document.getElementById('pdf-content');
+interface CVProps {
+  apiKey: string;
+}
+const CV: React.FC<CVProps> = () => {
+  const handleDownloadPDF = async () => {
+    try {
+      // Fetch the PDF file from assets
+      const fileId = '10PqoJInCVKJzlHpERtcGeS2rsm77hSom';
+      const pdfUrl = `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=AIzaSyAToT-BuOHG7VZg4HswrB4-7AJbwh_-vdI`;
 
-    if (input) {
-      const contentHeight = input.clientHeight;
-      const pageHeight = contentHeight + 40;
+      const response = await fetch(pdfUrl);
 
-      // eslint-disable-next-line new-cap
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'pt',
-        format: [input.clientWidth, pageHeight],
-      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch PDF file');
+      }
 
-      pdf.html(input, {
-        callback: () => {
-          pdf.save('HanahCV.pdf');
-        },
-      });
+      // Extract filename from response headers
+      const contentDisposition = response.headers.get('content-disposition');
+      let filename = 'Hannah_Baker_CV.pdf';
+      if (contentDisposition) {
+        const filenameRegex = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
+        const matches = filenameRegex.exec(contentDisposition);
+        if (matches != null && matches[1]) {
+          filename = matches[1].replace(/['"]/g, '');
+        }
+      }
+
+      // Create blob from the PDF data
+      const blob = await response.blob();
+
+      // Create an anchor element to trigger download
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', filename);
+      document.body.appendChild(link);
+
+      // Click the link to start the download
+      link.click();
+
+      // Clean up
+      link.parentNode?.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
     }
   };
 
@@ -351,7 +374,7 @@ const CV: React.FC = () => {
       </LazyShow>
       <div className="py-12h-screen flex items-center justify-center">
         <button
-          className="w-2/5 my-2 absolute flex items-center justify-center h-12 rounded-md text-tertiary border-lime-600 border-4"
+          className="w-1/6 flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-lime-600 hover:bg-border hover:text-lime-600 md:py-4 md:text-lg md:px-10"
           onClick={handleDownloadPDF}
         >
           Download PDF

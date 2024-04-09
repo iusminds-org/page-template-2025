@@ -14,12 +14,18 @@ import Menu from '../components/Menu';
 import OpeningStatement from '../components/OpeningStatement';
 import OpeningStatementImage from '../components/OpeningStatementImage';
 
-const App = () => {
+interface AppProps {
+  apiKey: string;
+}
+const App: React.FC<AppProps> = ({ apiKey }) => {
   const router = useRouter();
   const { pathname } = router;
 
+  // Check if the current route is '/cv'
   if (pathname === '/cv') {
-    return <CV />;
+    console.log(apiKey);
+    // Pass the apiKey as a prop to the CV component
+    return <CV apiKey={apiKey} />;
   }
 
   return (
