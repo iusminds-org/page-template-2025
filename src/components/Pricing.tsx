@@ -9,9 +9,9 @@ const Pricing = () => {
 
   return (
     <section className={`bg-background py-8`} id="pricing">
-      <div className={`container mx-auto px-2 pt-4 pb-12 text-primary`}>
+      <div className={`container mx-auto px-2 pt-4 pb-12 text-purple-500`}>
         <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-purple-500`}
         >
           {title}
         </h1>

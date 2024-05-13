@@ -60,7 +60,7 @@ const Menu = () => {
               ))}
               <a
                 href="#"
-                className={`font-medium text-primary hover:text-secondary`}
+                className={`font-medium text-purple-500 hover:text-purple-300`}
               >
                 Call to action
               </a>
@@ -114,7 +114,7 @@ const Menu = () => {
               </div>
               <a
                 href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100`}
+                className={`block w-full px-5 py-3 text-center font-medium text-purple-300 bg-gray-50 hover:bg-gray-100`}
               >
                 {callToAction.text}
               </a>
