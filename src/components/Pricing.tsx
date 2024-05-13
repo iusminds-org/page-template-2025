@@ -17,7 +17,7 @@ const Pricing = () => {
         </h1>
         <div className={`w-full mb-4`}>
           <div
-            className={`h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t`}
+            className={`h-1 mx-auto bg-purple-300 w-64 opacity-25 my-0 py-0 rounded-t`}
           ></div>
         </div>
         <div
@@ -64,7 +64,7 @@ const Pricing = () => {
                 {secondPlan?.name}
               </div>
               <div
-                className={`h-1 w-full bg-primary my-0 py-0 rounded-t`}
+                className={`h-1 w-full bg-purple-300 my-0 py-0 rounded-t`}
               ></div>
               <ul className={`w-full text-center text-base font-bold`}>
                 {secondPlan?.features.map((feature) => (
