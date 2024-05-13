@@ -96,68 +96,44 @@
     "title": "Pricing",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
+        "name": "Device",
+        "price": "$45",
+        "priceDetails": "per unit",
         "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
+          "1 Unit",
+          "Dimensions (2  x 3  x 1) inches ",
+          "Spatial Recording Supported",
+          "Weight: 30 grams",
+          "12 Hours per charge",
+          "1 Year Warranty",
+          "24 x 7 Support"
         ]
       },
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
+        "name": "AI Plan",
+        "price": "$0.25",
+        "priceDetails": "per hour",
 
         "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
-      },
-      {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
-        "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
+          "Unlimited AI processing",
+          "10+ integrations",
+          "16 GB of storage",
+          "Advanced Analytics",
+          "Custom AI Applications",
+          "24 x 7 Troubleshoot",
+          "Open-Source support"
         ]
       }
     ]
   },
   "about": {
-    "sections": [
+    "title": "Dream Team",
+    "items": [
       {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        "title": "Student Venture",
+        "description": "This project is the ideation of the brightest minds from Luminosity Labs at Arizona State University, an interdisciplinary lab. Our team comprises nine students from engineering, marketing, and manufacturing. Our goal is to become pioneers in future computing.",
+        "img": "/assets/images/team.png"
       }
-    ],
-    "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
-    }
+    ]
   }
 }
