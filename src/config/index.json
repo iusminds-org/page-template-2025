@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "React landing page 2021",
+    "name": "Focus",
     "logo": "/assets/images/logo.png"
   },
   "navigation": [
@@ -23,8 +23,8 @@
     }
   ],
   "callToAction": {
-    "text": "Get connected",
-    "href": "about"
+    "text": "Demo",
+    "href": "https://drive.google.com/file/d/10YMAaYWrqMWCJkWQ5CmAeoVODPTUisms/view?resourcekey"
   },
   "mainHero": {
     "title": "Making AI Devices for",
@@ -37,7 +37,7 @@
     },
     "secondaryAction": {
       "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      "href": "mailto:kpandya8@asu.edu?subject=RE: Interested in Learning More About Focus AI"
     }
   },
   "product": {
