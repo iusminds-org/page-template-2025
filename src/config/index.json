@@ -1,7 +1,9 @@
 {
   "company": {
-    "name": "React landing page 2021",
-    "logo": "/assets/images/logo.png"
+    "name": "Legal Block",
+    "logo": "/assets/images/logo.svg",
+    "companyNameLogo": "/assets/images/companyName.svg",
+    "beta": "/assets/images/beta.svg"
   },
   "navigation": [
     {
@@ -25,6 +27,9 @@
   "callToAction": {
     "text": "Get started",
     "href": "#"
+  },
+  "gif": {
+    "gifPath": "/assets/linesgif.gif"
   },
   "mainHero": {
     "title": "Use me as your",
@@ -122,32 +127,34 @@
     ]
   },
   "about": {
-    "sections": [
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      },
-      {
-        "name": "Something",
-        "href": "#",
-        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-      }
-    ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
+      "telegram": "https://github.com/issaafalkattan",
       "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/",
+      "gettingTouch": "Getting Touch",
+      "map": "/assets/images/map.svg",
+      "address": "200 Spectrum Center Dr,  Suite 300. Irvine CA 92618",
+      "phone": "/assets/images/phone.svg",
+      "phoneNumber": "+385 (0) 1 5525 100",
+      "mail": "/assets/images/mail.svg",
+      "mailAddress": "hello@legalblock.com"
     }
+  },
+  "infoSection": {
+    "icon": "/assets/images/logo.svg",
+    "title": "EASIER INVESTIGATIONS",
+    "subtitle": "WORRY-FREE COMPLIANCE",
+    "items": [
+      "Built by lawyers to combat crypto criminals.",
+      "Our methodology is tested and success is proven.",
+      "We have been part of some of the biggest crypto investigations.",
+      "Over 450M's worth cryptocurrencies are returned from criminals.",
+      "We know what do you need, because we had been in your position."
+    ],
+    "gradientStar": "/assets/images/gradientStar.svg",
+    "star": "/assets/images/star.svg"
+  },
+  "blockSection": {
+    "blockImage": "/assets/images/blocks.png"
   }
 }

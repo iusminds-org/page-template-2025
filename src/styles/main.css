@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sharp+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 :root {
-  --color-primary: #ec4755;
-  --color-secondary: #a12c34;
-  --color-tertiaty: #99a0a3;
+  --color-primary: #0A1FD0;
+  --color-secondary: #94A3DF;
+  --color-tertiaty: #1C2534;
 }
 
 a { 
-  @apply text-red-700;
+  @apply text-blue-700;
 }
 
 a:hover {
-  @apply border-b-2 border-red-700;
+  @apply border-b-2 border-blue-700;
 }
 
 
@@ -25,4 +28,92 @@ a:hover {
 
 .content ul {
   @apply my-6;
+}
+
+.montserrat-18 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0.06em;
+}
+
+.montserrat-18::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.border-gradient {
+  border-image: linear-gradient(to right, #ffffff, #0482fa);
+  border-image-slice: 1;
+}
+
+.montserrat-14 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: white;
+  opacity: 0.6;
+}
+
+.sharp-grotesk-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.montserrat-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.montserrat-text-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.trapezoid-background {
+  background: linear-gradient(135deg, #0A1FD0, #0B24FB); /* Adjust the colors as needed */
+  clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  padding-bottom: 70px;
+  padding-top: 70px;
+  padding-left: 90px;
+  padding-right: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: -140px;
+  margin-left: auto;
+}
+
+.gif-container {
+  margin: 30px 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.gif-image {
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+}
+
+.company-icon-background {
+  position: absolute;
+  left: -45%;
+  transform: scale(1.5);
+  opacity: 0.1;
+}
+
+.company-icon {
+  transform: scale(1.5);
+}
+
+.text-left {
+  text-align: left;
 }
