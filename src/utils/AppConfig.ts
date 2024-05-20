@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'React landing page',
-  title: 'React landing page template 2021',
-  description: 'Production ready plug n play landing page!',
+  site_name: 'Leagel Block',
+  title: 'Legal Block',
+  description: 'Legal Block Crypto Investigation Tool',
   locale: 'en',
 };
