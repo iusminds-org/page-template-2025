@@ -2,48 +2,38 @@ import React from 'react';
 
 import config from '../config/index.json';
 
-const InfoSection = () => {
+const InfoSection: React.FC = () => {
   const { infoSection } = config;
-  const { icon, title, subtitle, items, gradientStar, star } = infoSection;
 
   return (
-    <div className="relative flex justify-start items-center text-white py-16">
-      <div className="absolute inset-0 flex justify-start items-center">
-        <img
-          src={icon}
-          alt="Company Icon Background"
-          className="absolute opacity-10 w-5/6 h-5/6 scale-150 -left-40 -mt-8"
-        />
-      </div>
-      <div className="relative z-10 text-left ml-10">
-        <img
-          src={icon}
-          alt="Company Icon"
-          className="mb-16 w-1/6 h-1/6 scale-150 ml-8"
-        />
-        <h2 className="sharp-grotesk-title mb-2 text-4xl lg:text-6xl">
-          {title}
+    <section className="text-basic-white py-16 flex items-start space-x-6 mt-80">
+      <div className="w-[630px]">
+        <h2
+          className="font-dm-sans font-extrabold text-[32px] leading-[42px] mb-4 text-left"
+          style={{ letterSpacing: '0.05em' }}
+        >
+          {infoSection.title}
         </h2>
-        <h3 className="sharp-grotesk-title mb-8 text-2xl lg:text-4xl">
-          {subtitle}
-        </h3>
-        <ul className="list-none space-y-4">
-          {items.map((item, index) => (
-            <li
-              key={index}
-              className="montserrat-text flex items-start text-sm lg:text-lg"
-            >
-              <img
-                src={index % 2 === 0 ? gradientStar : star}
-                alt={index % 2 === 0 ? 'Star' : 'Gradient Star'}
-                className="mr-4 lg:mr-8 w-4 h-4 lg:w-6 lg:h-6"
-              />
-              {item}
-            </li>
-          ))}
-        </ul>
+
+        <p
+          className="font-dm-sans text-[18px] font-light text-left"
+          style={{ lineHeight: '160%' }}
+        >
+          {infoSection.subtitle1}
+        </p>
+        <p
+          className="font-dm-sans text-[18px] font-light py-3 text-left"
+          style={{ lineHeight: '160%' }}
+        >
+          {infoSection.subtitle2}
+        </p>
       </div>
-    </div>
+      <img
+        src={infoSection.icon}
+        alt="Info Icon"
+        className="px-16 h-50 w-50 items-center justify-center ml-10"
+      />
+    </section>
   );
 };
 
