@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-scroll';
+
 import config from '../config/index.json';
 
 const Pricing = () => {
@@ -46,12 +48,17 @@ const Pricing = () => {
             <div
               className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
             >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={1000}
+                key="a"
+                to="calendar"
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
               >
-                {firstPlan?.price}
-                <span className={`text-base`}> {firstPlan?.priceDetails}</span>
-              </div>
+                Sign up
+              </Link>
             </div>
           </div>
           <div
@@ -80,10 +87,17 @@ const Pricing = () => {
             <div
               className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
             >
-              <div className={`w-full pt-6 text-4xl font-bold text-center`}>
-                {secondPlan?.price}
-                <span className={`text-base`}> {secondPlan?.priceDetails}</span>
-              </div>
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={1000}
+                key="a"
+                to="calendar"
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
+              >
+                Sign up
+              </Link>
             </div>
           </div>
           <div
@@ -109,12 +123,17 @@ const Pricing = () => {
             <div
               className={`flex-none mt-auto bg-background rounded-b rounded-t-none overflow-hidden shadow p-6`}
             >
-              <div
-                className={`w-full pt-6 text-3xl text-gray-600 font-bold text-center`}
+              <Link
+                spy={true}
+                active="active"
+                smooth={true}
+                duration={1000}
+                key="a"
+                to="calendar"
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-primary text-secondary bg-background hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-10`}
               >
-                {thirdPlan?.price}
-                <span className={`text-base`}> {thirdPlan?.priceDetails}</span>
-              </div>
+                Sign up
+              </Link>
             </div>
           </div>
         </div>
