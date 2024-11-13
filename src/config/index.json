@@ -13,14 +13,15 @@
     "about": "About",
     "solutions": "Solutions",
     "contact": "Contact",
-    "demoButton": "Book a Demo",
+    "demoButton": "Request a Demo",
+    "login": "Login",
     "logo": "/assets/images/logo.svg"
   },
   "titleSection": {
-    "title": "Leading trust in Crypto",
+    "title": "Crypto Case investigation solutions",
     "description": "Take complete control over the access, filtering, and visualization of large data using an intuitive and user-friendly graph interface.",
     "callToAction": {
-      "text": "Book a Demo",
+      "text": "Request a Demo",
       "href": "#"
     }
   },

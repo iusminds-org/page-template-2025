@@ -1,20 +1,24 @@
-import React from 'react';
-
+import React, { Suspense, lazy } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import InfoSection from '../components/InfoSection';
 import TitleSection from '../components/TitleSection';
-import config from '../config/index.json';
+import Features from '../components/Features';
+import ContactSection from '../components/ContactSection';
+import GradientRectangle from '../components/GradientRectangle';
+//import config from '../config/index.json';
+
+const DynamicBackground = lazy(() => import('../components/DynamicBackground'));
 
 const LandingPage: React.FC = () => {
-  const { landingPage } = config;
+  //const { landingPage } = config;
 
   return (
-    <div className="relative min-h-screen flex flex-col overflow-hidden bg-purple-900">
+    <div className="relative min-h-screen flex flex-col overflow-hidden">
       <Header />
       {/* Radial Gradient Overlay (Ellipse Effect) */}
       <div
-        className="absolute -z-50"
+        className="absolute -z-40"
         style={{
           width: '90vw',
           height: '90vw',
@@ -24,6 +28,7 @@ const LandingPage: React.FC = () => {
             'radial-gradient(50% 50% at 50% 50%, #1B0F2E 0%, rgba(27, 15, 46, 0) 66%)',
         }}
       ></div>
+      <GradientRectangle />
 
       {/* Radial Gradient Overlay (Ellipse 2) */}
       <div
@@ -38,12 +43,18 @@ const LandingPage: React.FC = () => {
         }}
       ></div>
 
-      <img
-        src={landingPage.backgroundImage}
-        alt="Background"
-        className="absolute top-0 left-0 -z-50 transform rotate-[0.63deg] 
-          w-[2052.91px] h-[1220.12px] md:w-[2252.91px] md:h-[1520.12px]"
-      />
+        {/* Dynamic Background */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <DynamicBackground />
+      </Suspense>
+      <div
+        className="absolute left-0 right-0 w-full -z-40"
+        style={{
+          height: '480px',
+          marginTop: '40vh', // This will push it below the viewport
+          background: 'linear-gradient(180deg, rgba(27, 15, 46, 0) 0%, #1B0F2E 50%)',
+        }}
+      ></div>
       {/* Linear Gradient Overlay */}
       <div
         className="absolute w-full h-full lg:h-[70vh] left-0 right-0 -z-40 mt-96"
@@ -54,9 +65,11 @@ const LandingPage: React.FC = () => {
         }}
       ></div>
 
-      <main className="relative flex flex-col text-center py-8 px-36">
+      <main className="relative flex flex-col text-center py-8 px-12">
         <TitleSection />
+        <Features />
         <InfoSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
