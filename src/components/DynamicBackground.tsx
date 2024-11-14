@@ -34,7 +34,7 @@ const DynamicBackground: React.FC = () => {
             let mass = p.createVector(1, 1);
             let pos = p.createVector(
               p.random(10, p.width - 10),
-              p.random(10, p.height / 2)
+              p.random(10, p.height * 0.7)
             );
             let vel = p.createVector(p.random(-1), p.random(1));
             objects.push({ pos, vel, mass });
@@ -94,7 +94,7 @@ const DynamicBackground: React.FC = () => {
 
         function bounceOfBorder(obj: any) {
           if (obj.pos.x <= 0 || obj.pos.x >= p.width) obj.vel.x *= -1;
-          if (obj.pos.y <= 0 || obj.pos.y >= p.height / 2) obj.vel.y *= -1;
+          if (obj.pos.y <= 0 || obj.pos.y >= p.height * 0.7) obj.vel.y *= -1;
           obj.pos.add(obj.vel);
         }
       };

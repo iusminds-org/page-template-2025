@@ -39,16 +39,18 @@ const Header: React.FC = () => {
     <>
       <header className={`
         fixed top-0 left-0 right-0 
-        text-basic-white flex justify-between items-center 
+        flex justify-between items-center 
         py-2 xs:py-3 sm:py-4 lg:py-5 
         px-3 xs:px-4 sm:px-8 lg:px-12 
         z-50
         transition-all duration-300
-        ${isScrolled ? 'bg-[#1B0F2E] shadow-lg' : 'bg-transparent'}
+        ${isScrolled 
+          ? 'bg-white text-[#1B0F2E] shadow-lg' 
+          : 'bg-transparent text-basic-white'}
       `}>
         <div className="flex items-center">
           <img 
-            src={header.logo} 
+            src={isScrolled ? "/assets/images/black-logo.svg" : header.logo}
             alt="Legal Block" 
             className="h-6 xs:h-7 sm:h-8" 
           />
@@ -77,31 +79,37 @@ const Header: React.FC = () => {
         <nav className="hidden lg:flex space-x-6 font-poppins">
           <button 
             onClick={scrollToTop} 
-            className="hover:text-green-500 text-basic-white transition-colors text-base"
+            className={`hover:text-green-500 transition-colors text-base
+              ${isScrolled ? 'text-[#1B0F2E]' : 'text-basic-white'}`}
           >
             {header.home}
           </button>
           <button 
             onClick={scrollToAbout} 
-            className="hover:text-green-500 text-basic-white transition-colors text-base"
+            className={`hover:text-green-500 transition-colors text-base
+              ${isScrolled ? 'text-[#1B0F2E]' : 'text-basic-white'}`}
           >
             {header.about}
           </button>
           <button 
             onClick={scrollToFeatures} 
-            className="hover:text-green-500 text-basic-white transition-colors text-base"
+            className={`hover:text-green-500 transition-colors text-base
+              ${isScrolled ? 'text-[#1B0F2E]' : 'text-basic-white'}`}
           >
             {header.solutions}
           </button>
         </nav>
 
         <div className="hidden lg:flex items-center space-x-4">
-          <button className="
-            bg-basic-white text-black font-poppins 
+          <button className={`
+            font-poppins 
             text-base px-6 py-2 
             rounded 
-            hover:bg-gray-100 transition-colors
-          ">
+            transition-colors
+            ${isScrolled 
+              ? 'bg-[#1B0F2E] text-white hover:bg-[#2D1A47]' 
+              : 'bg-basic-white text-black hover:bg-gray-100'}
+          `}>
             {header.login}
           </button>
           <button className="
@@ -120,7 +128,7 @@ const Header: React.FC = () => {
           lg:hidden 
           fixed top-[48px] xs:top-[52px] sm:top-[60px] 
           left-0 right-0 
-          bg-[#1B0F2E] 
+          bg-white 
           shadow-lg
           py-4
           z-40
@@ -132,7 +140,7 @@ const Header: React.FC = () => {
                   scrollToTop();
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-left text-sm xs:text-base hover:text-green-500 text-basic-white transition-colors"
+                className="text-left text-sm xs:text-base hover:text-green-500 text-[#1B0F2E] transition-colors"
               >
                 {header.home}
               </button>
@@ -141,7 +149,7 @@ const Header: React.FC = () => {
                   scrollToAbout();
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-left text-sm xs:text-base hover:text-green-500 text-basic-white transition-colors"
+                className="text-left text-sm xs:text-base hover:text-green-500 text-[#1B0F2E] transition-colors"
               >
                 {header.about}
               </button>
@@ -150,20 +158,20 @@ const Header: React.FC = () => {
                   scrollToFeatures();
                   setIsMobileMenuOpen(false);
                 }}
-                className="text-left text-sm xs:text-base hover:text-green-500 text-basic-white transition-colors"
+                className="text-left text-sm xs:text-base hover:text-green-500 text-[#1B0F2E] transition-colors"
               >
                 {header.solutions}
               </button>
             </div>
 
-            <div className="flex items-center space-x-2 pt-4 border-t border-white/10">
+            <div className="flex items-center space-x-2 pt-4 border-t border-gray-200">
               <button className="
                 flex-1
-                bg-basic-white text-black font-poppins 
+                bg-[#1B0F2E] text-white font-poppins 
                 text-sm xs:text-base
                 px-3 py-1.5 xs:px-4 xs:py-2
                 rounded 
-                hover:bg-gray-100 transition-colors
+                hover:bg-[#2D1A47] transition-colors
                 text-center
               ">
                 {header.login}
