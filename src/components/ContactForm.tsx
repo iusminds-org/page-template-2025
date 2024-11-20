@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import { motion } from 'framer-motion';
+import { BsCheckCircleFill } from 'react-icons/bs';
 
 interface IFormInputs {
   firstName: string;
@@ -48,22 +50,80 @@ const FormField = ({
 
 const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   const { register, handleSubmit, formState: { errors }, reset } = useForm<IFormInputs>();
 
   const onSubmit: SubmitHandler<IFormInputs> = async (data) => {
     setIsSubmitting(true);
     try {
-      // Add your form submission logic here
-      console.log(data);
+      // Send form data to Python backend
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/send-request-taken-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          company: data.company,
+          jobTitle: data.jobTitle,
+          message: data.message
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || 'Failed to send email');
+      }
+
+      const result = await response.json();
+      console.log(result);
       reset();
-      // You might want to show a success message
+      setIsSuccess(true);
     } catch (error) {
-      // Handle error
       console.error(error);
+      // Handle error state here
     } finally {
       setIsSubmitting(false);
     }
   };
+
+  if (isSuccess) {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col items-center p-12 gap-6 w-full lg:w-[636px] bg-white shadow-lg rounded-xl"
+      >
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+        >
+          <BsCheckCircleFill className="w-24 h-24 text-[#533594]" />
+        </motion.div>
+        
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4 }}
+          className="text-2xl font-dm-sans font-bold text-center"
+        >
+          Thank You!
+        </motion.h2>
+        
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="text-center text-gray-600"
+        >
+          We've received your request and will get back to you shortly.
+        </motion.p>
+      </motion.div>
+    );
+  }
 
   return (
     <form 

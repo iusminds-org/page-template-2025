@@ -13,7 +13,7 @@
     "about": "About",
     "solutions": "Solutions",
     "contact": "Contact",
-    "demoButton": "Request a Demo",
+    "demoButton": "Register",
     "login": "Login",
     "logo": "/assets/images/logo.svg"
   },
@@ -21,7 +21,7 @@
     "title": "Crypto Case investigation solutions",
     "description": "Take complete control over the access, filtering, and visualization of large data using an intuitive and user-friendly graph interface.",
     "callToAction": {
-      "text": "Request a Demo",
+      "text": "Register",
       "href": "#"
     }
   },

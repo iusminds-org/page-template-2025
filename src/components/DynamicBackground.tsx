@@ -2,9 +2,12 @@ import React, { useEffect, useRef } from 'react';
 
 const DynamicBackground: React.FC = () => {
   const canvasRef = useRef<HTMLDivElement>(null);
+  const sketchRef = useRef<any>(null);
 
   useEffect(() => {
-    let canvas: any;
+    if (sketchRef.current) {
+      return;
+    }
 
     const loadP5 = async () => {
       const p5 = (await import('p5')).default;
@@ -12,6 +15,7 @@ const DynamicBackground: React.FC = () => {
       const sketch = (p: any) => {
         let objects: any[] = [];
         let iconImg: any;
+        
 
         p.preload = () => {
           iconImg = p.loadImage("/assets/images/circle-logo.svg", 
@@ -99,14 +103,15 @@ const DynamicBackground: React.FC = () => {
         }
       };
 
-      canvas = new p5(sketch);
+      sketchRef.current = new p5(sketch);
     };
 
     loadP5();
 
     return () => {
-      if (canvas) {
-        canvas.remove();
+      if (sketchRef.current) {
+        sketchRef.current.remove();
+        sketchRef.current = null;
       }
     };
   }, []);
