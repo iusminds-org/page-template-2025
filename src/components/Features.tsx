@@ -15,9 +15,9 @@ const FeatureCard = ({ icon, title, description, isLast = false }: {
       gap-4 xs:gap-5 sm:gap-6 
       w-full 
       min-h-[200px] xs:min-h-[240px] sm:min-h-[280px]
-      bg-white rounded-xl
+      ${isLast ? 'bg-transparent' : 'bg-white'} rounded-xl
       transition-all duration-300 ease-in-out
-      hover:shadow-lg hover:shadow-purple-500/20 hover:-translate-y-1
+      ${isLast ? '' : 'hover:shadow-lg hover:shadow-purple-500/20 hover:-translate-y-1'}
       cursor-pointer
     `}>
       <div className={`flex flex-row ${isLast ? 'justify-center' : 'items-start'} w-full gap-2.5`}>
@@ -27,7 +27,7 @@ const FeatureCard = ({ icon, title, description, isLast = false }: {
             alt={title}
             width={56}
             height={56}
-            className="w-full h-full text-purple-500"
+            className={`w-full h-full ${isLast ? 'text-white' : 'text-purple-500'}`}
           />
         </div>
       </div>
@@ -36,7 +36,7 @@ const FeatureCard = ({ icon, title, description, isLast = false }: {
           font-dm-sans font-extrabold 
           text-lg xs:text-xl sm:text-2xl 
           leading-[1.4] tracking-[0.02em] 
-          ${isLast ? 'text-center' : 'text-left'}
+          ${isLast ? 'text-center text-white' : 'text-left'}
         `}>
           {title}
         </h3>
@@ -44,7 +44,7 @@ const FeatureCard = ({ icon, title, description, isLast = false }: {
           font-dm-sans font-normal 
           text-xs xs:text-sm sm:text-base 
           leading-[150%] 
-          ${isLast ? 'text-center' : 'text-left'}
+          ${isLast ? 'text-center text-white' : 'text-left'}
         `}>
           {description}
         </p>

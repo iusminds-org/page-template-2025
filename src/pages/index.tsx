@@ -7,6 +7,7 @@ import Features from '../components/Features';
 import ContactSection from '../components/ContactSection';
 import GradientRectangle from '../components/GradientRectangle';
 import SupportedTokens from '../components/SupportedTokens';
+import Team from '../components/Team';
 //import config from '../config/index.json';
 
 const DynamicBackground = lazy(() => import('../components/DynamicBackground'));
@@ -32,11 +33,12 @@ const LandingPage: React.FC = () => {
 
       <Header />
 
-      <main className="relative flex flex-col text-center py-8 px-12">
+      <main className="relative flex flex-col text-center py-8 lg:px-12 sm:px-4 xs:px-1">
         <TitleSection />
         <SupportedTokens />
         <Features />
         <InfoSection />
+        <Team />
         <ContactSection />
       </main>
       <Footer />

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { BsCheckCircleFill } from 'react-icons/bs';
+import toast from 'react-hot-toast';
 
 interface IFormInputs {
   firstName: string;
   lastName: string;
   email: string;
   company: string;
-  jobTitle: string;
   message: string;
 }
 
@@ -54,6 +54,25 @@ const ContactForm: React.FC = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm<IFormInputs>();
 
   const onSubmit: SubmitHandler<IFormInputs> = async (data) => {
+    if (!data.firstName || !data.lastName || !data.email) {
+      toast.error(
+        <div className="flex flex-col">
+          <span className="font-bold">Required Fields Missing</span>
+          <span className="text-sm">Please fill in all required fields.</span>
+        </div>,
+        {
+          style: {
+            background: '#1B0F2E',
+            color: '#fff',
+            border: '1px solid #533594',
+          },
+          icon: '⚠️',
+          duration: 3000,
+        }
+      );
+      return;
+    }
+
     setIsSubmitting(true);
     try {
       // Send form data to Python backend
@@ -66,14 +85,12 @@ const ContactForm: React.FC = () => {
           name: `${data.firstName} ${data.lastName}`,
           email: data.email,
           company: data.company,
-          jobTitle: data.jobTitle,
           message: data.message
         }),
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Failed to send email');
+        throw new Error('Failed to send email');
       }
 
       const result = await response.json();
@@ -83,6 +100,21 @@ const ContactForm: React.FC = () => {
     } catch (error) {
       console.error(error);
       // Handle error state here
+      toast.error(
+        <div className="flex flex-col">
+          <span className="font-bold">Submission Failed</span>
+          <span className="text-sm">Please try again later.</span>
+        </div>,
+        {
+          style: {
+            background: '#1B0F2E',
+            color: '#fff',
+            border: '1px solid #533594',
+          },
+          icon: '❌',
+          duration: 3000,
+        }
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -131,7 +163,7 @@ const ContactForm: React.FC = () => {
       className="flex flex-col items-start p-12 gap-6 w-full lg:w-[636px] bg-white shadow-lg rounded-xl"
     >
       <h2 className="text-left font-dm-sans font-extrabold text-[26px] leading-[41px] tracking-[0.02em] w-full">
-        Request a Demo
+        Beta Registration
       </h2>
 
       {/* Name Fields Row */}
@@ -167,14 +199,6 @@ const ContactForm: React.FC = () => {
         error={errors.company?.message}
       />
 
-      {/* Job Title Field */}
-      <FormField
-        label="Job Title"
-        name="jobTitle"
-        register={register}
-        error={errors.jobTitle?.message}
-      />
-
       {/* Message Field */}
       <div className="flex flex-col gap-1 w-full">
         <label className="font-dm-sans font-semibold text-base leading-[21px]">
@@ -195,7 +219,7 @@ const ContactForm: React.FC = () => {
           border border-[#372B89] rounded-[4px] text-white font-dm-sans text-lg leading-[160%]
           hover:bg-[#472d80] transition-colors duration-200 disabled:opacity-70"
       >
-        {isSubmitting ? 'Submitting...' : 'Send'}
+        {isSubmitting ? 'Submitting...' : 'Register to Beta'}
       </button>
     </form>
   );
