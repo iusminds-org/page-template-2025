@@ -1,7 +1,10 @@
 {
   "name": "react-landing-page-2021",
   "version": "1.0.0",
+  "homepage": "https://iusminds-org.github.io/page-template-2025",
   "scripts": {
+    "predeploy": npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
